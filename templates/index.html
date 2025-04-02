@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Scanner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 2rem;
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        .card-header {
+            background-color: #212529;
+            color: white;
+            font-weight: bold;
+        }
+        .badge-exploit {
+            background-color: #dc3545;
+        }
+        .badge-no-exploit {
+            background-color: #6c757d;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #212529;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+            display: none;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .results-container {
+            display: none;
+        }
+        .cve-card {
+            transition: transform 0.3s;
+        }
+        .cve-card:hover {
+            transform: translateY(-5px);
+        }
+        .port-item {
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+        .exploit-probability-high {
+            color: #dc3545;
+        }
+        .exploit-probability-medium {
+            color: #fd7e14;
+        }
+        .exploit-probability-low {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card mb-4">
+                    <div class="card-header bg-dark text-white">
+                        <h3 class="mb-0">Vulnerability Scanner</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="scanForm">
+                            <div class="mb-3">
+                                <label for="target" class="form-label">Target (IP or Domain)</label>
+                                <input type="text" class="form-control" id="target" name="target" placeholder="e.g., example.com or 192.168.1.1" required>
+                                <div class="form-text">Enter a hostname, domain name, or IP address. URLs like http://example.com will be automatically converted.</div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="submit" class="btn btn-primary">Scan Target</button>
+                                <button type="button" id="viewLatestScan" class="btn btn-outline-secondary">View Latest Scan</button>
+                            </div>
+                        </form>
+                        <div class="loader" id="loader"></div>
+                        <div id="scanStatus" class="mt-3" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <!-- Results Container -->
+                <div id="resultsContainer" class="results-container">
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0">Scan Results: <span id="targetDisplay"></span></h4>
+                            <div>
+                                <button class="btn btn-sm btn-outline-primary" id="downloadJson">Download JSON</button>
+                                <button class="btn btn-sm btn-outline-secondary" id="downloadTxt">Download Report</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">System Information</div>
+                                        <div class="card-body">
+                                            <p><strong>OS:</strong> <span id="osInfo">Unknown</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card">
+                                        <div class="card-header">Open Ports</div>
+                                        <div class="card-body">
+                                            <div id="portsList">No open ports detected</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vulnerabilities -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Vulnerability Analysis</span>
+                                <small class="text-muted">Includes both direct matches and ML predictions</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="nav nav-tabs" id="vulnerabilityTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="direct-tab" data-bs-toggle="tab" data-bs-target="#direct" type="button" role="tab">Direct Matches</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="predicted-tab" data-bs-toggle="tab" data-bs-target="#predicted" type="button" role="tab">ML Predicted</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3" id="vulnerabilityContent">
+                                <div class="tab-pane fade show active" id="direct" role="tabpanel">
+                                    <div id="directVulnerabilities" class="row">
+                                        <div class="col-12 text-center py-4">
+                                            <p>No direct vulnerability matches found</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="predicted" role="tabpanel">
+                                    <div id="predictedVulnerabilities" class="row">
+                                        <div class="col-12 text-center py-4">
+                                            <p>No predicted vulnerabilities found</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to load the latest scan
+        document.getElementById('viewLatestScan').addEventListener('click', function() {
+            // Show loader
+            document.getElementById('loader').style.display = 'block';
+            const statusElement = document.getElementById('scanStatus');
+            statusElement.style.display = 'block';
+            statusElement.innerHTML = '<div class="alert alert-info">Loading latest scan results...</div>';
+            document.getElementById('resultsContainer').style.display = 'none';
+            
+            // Fetch latest scan data
+            fetch('/latest-scan')
+                .then(response => {
+                    if (!response.ok) {
+                        if (response.status === 404) {
+                            throw new Error('No scan results available. Run a scan first.');
+                        }
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Hide loader and status
+                    document.getElementById('loader').style.display = 'none';
+                    statusElement.style.display = 'none';
+                    
+                    // Display results
+                    displayResults(data);
+                })
+                .catch(error => {
+                    document.getElementById('loader').style.display = 'none';
+                    statusElement.innerHTML = `<div class="alert alert-danger">Error: ${error.message}</div>`;
+                    statusElement.style.display = 'block';
+                });
+        });
+
+        document.getElementById('scanForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get and validate target
+            const target = document.getElementById('target').value.trim();
+            if (!target) {
+                alert('Please enter a valid target');
+                return;
+            }
+            
+            // Show loader and status
+            document.getElementById('loader').style.display = 'block';
+            const statusElement = document.getElementById('scanStatus');
+            statusElement.style.display = 'block';
+            statusElement.innerHTML = '<div class="alert alert-info">Starting scan... This may take a minute or two.</div>';
+            document.getElementById('resultsContainer').style.display = 'none';
+            
+            // Make AJAX request to scan endpoint
+            fetch('/scan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ target: target })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                
+                statusElement.innerHTML = '<div class="alert alert-info">Scan complete. Processing results...</div>';
+                return response.text(); // Get as text first to handle JSON parse errors
+            })
+            .then(text => {
+                // Try to parse as JSON
+                try {
+                    return JSON.parse(text);
+                } catch (e) {
+                    // If can't parse as JSON, throw error with response text
+                    console.error("Failed to parse response:", text);
+                    
+                    // Special handling for truncated JSON responses
+                    if (text.includes('"cves": [') && text.includes('"affected_software":')) {
+                        // This suggests the response was valid JSON but got truncated
+                        statusElement.innerHTML = `
+                            <div class="alert alert-warning">
+                                <strong>Partial Results Available:</strong> The scan completed but the results were too large to display fully in the web interface.
+                                <br><br>
+                                <p>The following options are available:</p>
+                                <ul>
+                                    <li>Try scanning a smaller target</li>
+                                    <li>Use the terminal scanner: <code>python scan_terminal.py ${target}</code></li>
+                                </ul>
+                            </div>`;
+                        statusElement.style.display = 'block';
+                        
+                        // Download buttons are now fixed URLs
+                        statusElement.innerHTML += `
+                            <div class="mt-3">
+                                <p>Download results:</p>
+                                <button class="btn btn-sm btn-outline-primary" onclick="window.location.href='/download/json'">Download JSON</button>
+                                <button class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/download/txt'">Download Report</button>
+                            </div>`;
+                        
+                        throw new Error('Results too large for web display. Use terminal scanner or download available files.');
+                    }
+                    
+                    throw new Error(`Invalid JSON response: ${text.substring(0, 100)}...`);
+                }
+            })
+            .then(data => {
+                // Hide loader and status
+                document.getElementById('loader').style.display = 'none';
+                statusElement.style.display = 'none';
+                
+                if (data.error) {
+                    statusElement.innerHTML = `<div class="alert alert-danger">Error: ${data.error}</div>`;
+                    statusElement.style.display = 'block';
+                    return;
+                }
+                
+                // Display results
+                displayResults(data);
+            })
+            .catch(error => {
+                document.getElementById('loader').style.display = 'none';
+                console.error('Error:', error);
+                statusElement.innerHTML = `<div class="alert alert-danger">Error: ${error.message}</div>`;
+                statusElement.style.display = 'block';
+            });
+        });
+        
+        function displayResults(data) {
+            // Set target display
+            document.getElementById('targetDisplay').textContent = data.target || 'Unknown';
+            
+            // Display scan timestamp if available
+            const targetElement = document.getElementById('targetDisplay');
+            if (data.scan_timestamp) {
+                targetElement.innerHTML = `${data.target} <small class="text-muted">(Scanned: ${data.scan_timestamp})</small>`;
+            } else {
+                targetElement.textContent = data.target;
+            }
+            
+            // Set OS info
+            document.getElementById('osInfo').textContent = data.os || 'Unknown';
+            
+            // Display open ports
+            const portsListElement = document.getElementById('portsList');
+            if (data.open_ports && data.open_ports.length > 0) {
+                let portsHtml = '';
+                data.services.forEach(service => {
+                    portsHtml += `
+                        <div class="port-item mb-2">
+                            <strong>Port ${service.port}:</strong> ${service.service || 'Unknown service'}
+                        </div>
+                    `;
+                });
+                portsListElement.innerHTML = portsHtml;
+            } else {
+                portsListElement.innerHTML = 'No open ports detected';
+            }
+            
+            // Display vulnerabilities - ensure cves exists and is an array
+            if (data.cves && Array.isArray(data.cves)) {
+                displayVulnerabilities(data.cves);
+            } else {
+                console.log('No CVEs array found in data:', data);
+                // Handle the case where there are no CVEs at all
+                document.getElementById('directVulnerabilities').innerHTML = 
+                    '<div class="col-12 text-center py-4"><p>No direct vulnerability matches found</p></div>';
+                document.getElementById('predictedVulnerabilities').innerHTML = 
+                    '<div class="col-12 text-center py-4"><p>No predicted vulnerabilities found</p></div>';
+            }
+            
+            // Set download buttons to use the fixed URLs
+            document.getElementById('downloadJson').onclick = () => {
+                window.location.href = '/download/json';
+            };
+            document.getElementById('downloadTxt').onclick = () => {
+                window.location.href = '/download/txt';
+            };
+            
+            // Show results container
+            document.getElementById('resultsContainer').style.display = 'block';
+        }
+        
+        function displayVulnerabilities(cves) {
+            const directVulnElement = document.getElementById('directVulnerabilities');
+            const predictedVulnElement = document.getElementById('predictedVulnerabilities');
+            const directTabElement = document.getElementById('direct-tab');
+            const predictedTabElement = document.getElementById('predicted-tab');
+            
+            // Filter CVEs by match type
+            const directCves = cves.filter(cve => cve.match_type === 'direct');
+            const predictedCves = cves.filter(cve => cve.match_type === 'predicted');
+            
+            // Debug: Log the number of CVEs found for each type
+            console.log(`Found ${directCves.length} direct CVEs and ${predictedCves.length} predicted CVEs`);
+            console.log('All CVEs:', cves);
+            
+            // Update tab labels with counts
+            directTabElement.innerHTML = `Direct Matches${directCves.length > 0 ? ` <span class="badge bg-primary">${directCves.length}</span>` : ''}`;
+            predictedTabElement.innerHTML = `ML Predicted${predictedCves.length > 0 ? ` <span class="badge bg-danger">${predictedCves.length}</span>` : ''}`;
+            
+            // Display direct vulnerabilities
+            if (directCves.length > 0) {
+                directVulnElement.innerHTML = generateVulnerabilityCards(directCves);
+            } else {
+                directVulnElement.innerHTML = '<div class="col-12 text-center py-4"><p>No direct vulnerability matches found</p></div>';
+            }
+            
+            // Display predicted vulnerabilities
+            if (predictedCves.length > 0) {
+                predictedVulnElement.innerHTML = generateVulnerabilityCards(predictedCves);
+                
+                // If we have predicted vulnerabilities but no direct ones, activate the predicted tab
+                if (directCves.length === 0) {
+                    console.log('Switching to ML Predicted tab');
+                    // Use Bootstrap's tab API to ensure proper activation
+                    const predictedTab = new bootstrap.Tab(predictedTabElement);
+                    predictedTab.show();
+                }
+            } else {
+                predictedVulnElement.innerHTML = '<div class="col-12 text-center py-4"><p>No predicted vulnerabilities found</p></div>';
+            }
+        }
+        
+        function generateVulnerabilityCards(cves) {
+            let html = '';
+            
+            cves.forEach(cve => {
+                let exploitBadge = '';
+                if (cve.has_exploit) {
+                    exploitBadge = `<span class="badge bg-danger">Exploit: ${cve.edb_id}</span>`;
+                } else if (cve.match_type === 'predicted' && cve.exploit_probability) {
+                    let probabilityClass = '';
+                    if (cve.exploit_probability > 0.7) {
+                        probabilityClass = 'exploit-probability-high';
+                    } else if (cve.exploit_probability > 0.4) {
+                        probabilityClass = 'exploit-probability-medium';
+                    } else {
+                        probabilityClass = 'exploit-probability-low';
+                    }
+                    exploitBadge = `<span class="badge bg-secondary">No known exploit</span> <span class="${probabilityClass}">Probability: ${(cve.exploit_probability * 100).toFixed(1)}%</span>`;
+                } else {
+                    exploitBadge = '<span class="badge bg-secondary">No known exploit</span>';
+                }
+                
+                html += `
+                <div class="col-md-6 mb-3">
+                    <div class="card cve-card h-100">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>${cve.cve_id}</span>
+                            ${exploitBadge}
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">${cve.description}</p>
+                            <p class="card-text"><small class="text-muted">Affects: ${cve.affected_software}</small></p>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+            
+            return html;
+        }
+    </script>
+</body>
+</html> 

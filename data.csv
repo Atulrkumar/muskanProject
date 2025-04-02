@@ -1,0 +1,501 @@
+﻿cve_id,edb_id,description,affected_software
+CVE-2023-7170,None,SSRF vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2023-7488,None,Auth Bypass vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2021-9743,EDB-69923,XSS vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2022-2067,EDB-17279,XXE vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2019-5786,EDB-75715,DoS vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2022-1841,EDB-62684,Privilege Escalation vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2021-7846,EDB-14655,XXE vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2023-5133,EDB-60507,Command Injection vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2020-3675,None,Command Injection vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2020-1590,EDB-48501,Path Traversal vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2023-9722,EDB-68906,SQL Injection vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2018-9006,EDB-59316,Auth Bypass vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2018-1647,None,Buffer Overflow vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2022-2965,None,SQL Injection vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2018-5829,None,XXE vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2019-9581,EDB-94514,Privilege Escalation vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2020-5335,None,CSRF vulnerability in PHP 7.4.9,PHP 7.4.9
+CVE-2020-5827,EDB-57521,Auth Bypass vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2023-5435,EDB-48773,CSRF vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2023-9840,None,SQL Injection vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2021-8009,EDB-81328,Auth Bypass vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2019-3886,EDB-77175,Privilege Escalation vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2020-3800,EDB-68213,XSS vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2018-9403,EDB-67935,Privilege Escalation vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2018-3565,EDB-78579,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-5564,None,XSS vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2020-8694,EDB-89980,XXE vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2020-6411,EDB-87824,Buffer Overflow vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2018-9846,EDB-18998,DoS vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2022-9592,EDB-26385,Path Traversal vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2019-3631,EDB-97937,Information Disclosure vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2020-2741,EDB-38638,Auth Bypass vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2022-5093,EDB-19047,Buffer Overflow vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2018-6974,EDB-28469,SQL Injection vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2022-8820,EDB-71632,CSRF vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2018-4098,None,SQL Injection vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2020-5303,None,Buffer Overflow vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2019-5254,EDB-42551,Privilege Escalation vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2019-4787,EDB-59032,Information Disclosure vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2021-9772,EDB-35939,Buffer Overflow vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2020-6012,EDB-53255,Privilege Escalation vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2023-8627,EDB-52741,XSS vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2023-1953,EDB-55675,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-8353,None,DoS vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2018-5212,None,XSS vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2020-9500,None,Auth Bypass vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2019-8664,EDB-43492,SQL Injection vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2021-7821,EDB-75587,Path Traversal vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2019-9378,EDB-47335,XSS vulnerability in IIS 10.0,IIS 10.0
+CVE-2020-7412,EDB-82943,DoS vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2021-9677,EDB-68564,XXE vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-3203,EDB-69999,Buffer Overflow vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2020-2949,EDB-31422,Auth Bypass vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2020-1589,EDB-15350,SQL Injection vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2019-2266,EDB-78067,Privilege Escalation vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2023-8913,EDB-64857,CSRF vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2018-9163,EDB-79833,XSS vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2021-8086,EDB-85477,XXE vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2022-9171,EDB-34035,CSRF vulnerability in Firefox 90.0,Firefox 90.0
+CVE-2023-6678,EDB-34388,DoS vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2018-9156,EDB-48615,Command Injection vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2020-4922,None,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-1555,None,Privilege Escalation vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2022-8491,EDB-49681,Buffer Overflow vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2018-6124,EDB-82770,Path Traversal vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2021-6333,EDB-70180,Auth Bypass vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2021-1491,EDB-29328,Auth Bypass vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2022-6874,EDB-36269,Information Disclosure vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2022-2641,EDB-21901,Path Traversal vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2020-8787,EDB-32786,CSRF vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2020-1890,EDB-40204,SQL Injection vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2023-1104,EDB-45792,XXE vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2022-7680,EDB-24633,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-1697,EDB-90925,Buffer Overflow vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2021-2623,None,SSRF vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2022-2401,EDB-63880,SQL Injection vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2021-3340,EDB-84057,Buffer Overflow vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2022-3984,None,XXE vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2020-1762,None,XSS vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2023-6232,None,Buffer Overflow vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2023-1864,None,CSRF vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2022-1195,EDB-59492,SQL Injection vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2019-4866,EDB-46224,Information Disclosure vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2019-7542,EDB-46743,SQL Injection vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2022-2720,None,Privilege Escalation vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2023-2969,None,SSRF vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2018-5117,None,SSRF vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2020-2688,EDB-33826,Command Injection vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2018-4090,None,CSRF vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2020-4821,EDB-96834,Command Injection vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2019-2934,None,Auth Bypass vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2018-2983,None,Information Disclosure vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2021-5386,EDB-10735,XSS vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2022-8274,None,SSRF vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2023-2716,EDB-80622,Path Traversal vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2019-2005,None,XSS vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2021-1468,EDB-69527,CSRF vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2019-1196,EDB-54789,Privilege Escalation vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2019-3737,EDB-10101,Auth Bypass vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2023-6024,None,XSS vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2020-2659,EDB-37607,Auth Bypass vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2020-7526,None,Privilege Escalation vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2021-8191,EDB-51649,Privilege Escalation vulnerability in Linux Kernel 4.4.0,Linux Kernel 4.4.0
+CVE-2020-5734,None,SSRF vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2019-6724,None,Path Traversal vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2019-9227,EDB-14847,SQL Injection vulnerability in IIS 10.0,IIS 10.0
+CVE-2020-2899,EDB-56224,XXE vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2022-4022,None,Information Disclosure vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-4023,EDB-53307,SSRF vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2022-9201,EDB-17299,Information Disclosure vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2022-6753,EDB-70948,SQL Injection vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2018-2326,EDB-81843,SQL Injection vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2020-4363,EDB-42418,Buffer Overflow vulnerability in Firefox 90.0,Firefox 90.0
+CVE-2019-4379,EDB-19930,Buffer Overflow vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2021-6823,EDB-60541,Command Injection vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2020-8047,EDB-48750,SQL Injection vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2021-7676,EDB-10404,Privilege Escalation vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2022-9466,EDB-33306,Command Injection vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2020-1540,EDB-17743,Auth Bypass vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2020-5167,None,XXE vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2022-8986,None,XXE vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2019-5240,EDB-69027,Buffer Overflow vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2018-9156,EDB-89832,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2019-2227,EDB-48736,XXE vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-7048,EDB-81507,Buffer Overflow vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2022-4755,EDB-56887,SQL Injection vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2018-3989,EDB-93334,Information Disclosure vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-9618,None,Information Disclosure vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2020-7114,EDB-78220,Path Traversal vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2022-4077,None,Command Injection vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2021-1002,EDB-32539,SSRF vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2018-5328,EDB-59023,Path Traversal vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2022-6320,EDB-37512,DoS vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2020-2465,EDB-26576,XXE vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2023-9923,EDB-33445,Buffer Overflow vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2019-9113,EDB-89797,XSS vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2022-1928,None,XSS vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2019-7733,EDB-26741,Privilege Escalation vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2022-6465,EDB-49615,SQL Injection vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2018-1888,None,Path Traversal vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2020-6630,EDB-23891,XXE vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2019-1566,EDB-59703,DoS vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2019-6353,None,XXE vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2019-2027,None,XSS vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2023-3949,EDB-55264,Buffer Overflow vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2021-3703,EDB-49069,Command Injection vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2018-3596,EDB-17719,Auth Bypass vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2022-9046,EDB-83251,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2019-7506,EDB-30035,Information Disclosure vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2023-6101,EDB-97512,XSS vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2020-8708,EDB-50229,XXE vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2023-3111,EDB-70921,SQL Injection vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2019-4895,EDB-45158,Auth Bypass vulnerability in WordPress 5.4.1,WordPress 5.4.1
+CVE-2020-2196,EDB-83748,XXE vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2021-9606,None,CSRF vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2022-2008,EDB-44905,Buffer Overflow vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2023-7272,EDB-66127,XXE vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2021-5008,None,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2020-7569,EDB-29167,XXE vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2021-7377,EDB-23391,Privilege Escalation vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2018-6934,EDB-52300,SSRF vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2020-5529,EDB-73421,Path Traversal vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2019-3807,EDB-39677,Information Disclosure vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-7264,EDB-14478,SQL Injection vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2023-7883,None,Information Disclosure vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2021-8305,EDB-89780,CSRF vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2020-8003,EDB-69962,SSRF vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2018-1755,EDB-80652,Privilege Escalation vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2022-8914,EDB-39130,Information Disclosure vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2019-2475,None,XSS vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2018-6120,EDB-52882,Auth Bypass vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2022-8828,EDB-78639,XXE vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2022-3692,EDB-90571,XXE vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2021-3069,EDB-23340,SQL Injection vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2023-2334,None,XSS vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2022-6213,EDB-56761,DoS vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2023-2910,EDB-99130,Auth Bypass vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2020-4637,EDB-69463,XXE vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2023-2578,EDB-59019,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-2022,EDB-58277,SQL Injection vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2022-8643,EDB-18019,Command Injection vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2022-4178,EDB-44112,CSRF vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2020-9667,EDB-47122,DoS vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2019-7766,EDB-58383,CSRF vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2020-5407,EDB-85578,Privilege Escalation vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2018-4087,EDB-65728,DoS vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2022-4042,EDB-29200,XSS vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2022-8521,None,XSS vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2021-5382,EDB-66930,Buffer Overflow vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2022-7609,None,DoS vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2022-7369,EDB-62381,Auth Bypass vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2019-3702,None,Privilege Escalation vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2019-2606,None,Buffer Overflow vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2019-7368,EDB-29559,Privilege Escalation vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2018-1441,EDB-33568,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2020-6420,None,Privilege Escalation vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2018-8436,None,Path Traversal vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2020-5818,None,CSRF vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2022-3287,None,Auth Bypass vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2018-1232,None,SQL Injection vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2021-8141,EDB-16285,Path Traversal vulnerability in IIS 10.0,IIS 10.0
+CVE-2019-7527,None,Path Traversal vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2020-9876,None,DoS vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2023-5370,None,CSRF vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2022-9262,None,Privilege Escalation vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2021-9021,EDB-89947,XSS vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2022-7899,EDB-38113,XXE vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2021-1595,EDB-98753,DoS vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2023-4584,EDB-36122,SQL Injection vulnerability in PHP 7.4.9,PHP 7.4.9
+CVE-2021-3163,EDB-76134,SSRF vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2019-9830,None,Auth Bypass vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2020-6097,None,SSRF vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2020-9483,EDB-28611,Path Traversal vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2022-1013,None,Path Traversal vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2022-6064,EDB-12507,Command Injection vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2019-2986,EDB-53161,Path Traversal vulnerability in Linux Kernel 4.4.0,Linux Kernel 4.4.0
+CVE-2022-9784,EDB-83756,Command Injection vulnerability in Linux Kernel 4.4.0,Linux Kernel 4.4.0
+CVE-2023-9750,EDB-73121,Buffer Overflow vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2019-6114,EDB-91049,Path Traversal vulnerability in IIS 10.0,IIS 10.0
+CVE-2023-4371,EDB-95184,DoS vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2020-4926,EDB-87597,XSS vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2022-8731,None,XSS vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2023-6418,EDB-40222,SQL Injection vulnerability in IIS 10.0,IIS 10.0
+CVE-2023-5169,EDB-65432,XSS vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2021-1829,EDB-57039,SSRF vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2021-2459,EDB-28529,SQL Injection vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2021-4132,EDB-35633,Auth Bypass vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2021-1371,EDB-47415,SQL Injection vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2023-2822,EDB-86357,Path Traversal vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2021-7082,EDB-44042,CSRF vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2018-6678,EDB-71794,Information Disclosure vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2018-9352,None,DoS vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2021-6486,None,Command Injection vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-3902,EDB-21323,SQL Injection vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2019-2999,EDB-70705,Command Injection vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2021-5672,None,Path Traversal vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-9856,EDB-93776,Privilege Escalation vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2019-9265,EDB-39469,CSRF vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2019-6274,EDB-57268,Auth Bypass vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2023-6061,EDB-24621,Buffer Overflow vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2020-1286,EDB-83102,Buffer Overflow vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2021-9830,EDB-67886,Auth Bypass vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2019-2455,EDB-30714,XSS vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2019-2892,None,Auth Bypass vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2023-2490,EDB-74186,Information Disclosure vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2021-8057,EDB-26821,SSRF vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2018-7538,EDB-32610,DoS vulnerability in IIS 10.0,IIS 10.0
+CVE-2023-3614,None,XXE vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2018-5888,EDB-87958,Privilege Escalation vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-9501,EDB-92056,Auth Bypass vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2023-7467,None,XSS vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2023-3219,None,Privilege Escalation vulnerability in IIS 10.0,IIS 10.0
+CVE-2020-7181,EDB-74070,XSS vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2019-7423,None,SQL Injection vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2020-3884,EDB-83684,Command Injection vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2019-5613,None,Path Traversal vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2018-7035,EDB-82186,Information Disclosure vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2021-6319,EDB-55711,Path Traversal vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2023-5018,EDB-82144,CSRF vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2023-7014,EDB-77454,Command Injection vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2020-6017,EDB-43667,Auth Bypass vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2023-8640,None,DoS vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2019-2081,None,SQL Injection vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2019-2544,EDB-56276,Information Disclosure vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2019-6341,None,Command Injection vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2020-8327,None,DoS vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2023-1051,EDB-22507,SQL Injection vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2022-4903,EDB-60018,Privilege Escalation vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2020-5908,None,Privilege Escalation vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2019-6869,None,Auth Bypass vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2018-3293,EDB-17636,Path Traversal vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2023-6595,EDB-97722,Path Traversal vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2020-5678,None,XXE vulnerability in WordPress 5.4.1,WordPress 5.4.1
+CVE-2021-5863,EDB-10967,XSS vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2020-3672,EDB-47658,Information Disclosure vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2020-6741,EDB-25240,CSRF vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2022-8616,EDB-69994,SQL Injection vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2018-4069,EDB-79966,CSRF vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2021-9983,EDB-33552,DoS vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2018-4267,None,Command Injection vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2018-5555,EDB-44001,Path Traversal vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2021-1486,EDB-35375,XXE vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2021-6351,EDB-31453,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-7463,EDB-17097,SSRF vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2018-4612,EDB-28525,Buffer Overflow vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2018-5186,None,Command Injection vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2021-3488,None,Path Traversal vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2021-5841,EDB-73645,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2019-9729,EDB-77144,XSS vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2021-6824,None,Privilege Escalation vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2019-4333,None,XSS vulnerability in Linux Kernel 4.4.0,Linux Kernel 4.4.0
+CVE-2023-5419,EDB-61713,SQL Injection vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2023-9157,EDB-46923,CSRF vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2022-3641,EDB-63099,Command Injection vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2020-1295,None,XXE vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2022-9071,None,Privilege Escalation vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2020-8287,EDB-22592,CSRF vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2018-3255,EDB-49769,Path Traversal vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2022-9347,None,Information Disclosure vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2019-7471,EDB-55205,Auth Bypass vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2021-7528,EDB-50934,Information Disclosure vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2023-7585,None,DoS vulnerability in Firefox 90.0,Firefox 90.0
+CVE-2021-4276,EDB-41686,Buffer Overflow vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2021-5574,EDB-23101,Buffer Overflow vulnerability in Firefox 90.0,Firefox 90.0
+CVE-2021-8109,None,SQL Injection vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2023-5918,EDB-92798,Auth Bypass vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2022-1818,EDB-40257,Privilege Escalation vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2020-1028,None,SQL Injection vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2020-3094,EDB-22396,Path Traversal vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2019-7283,EDB-99713,Information Disclosure vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2018-2924,EDB-22273,Buffer Overflow vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2018-8932,EDB-74878,Path Traversal vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2020-3592,None,Information Disclosure vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2020-6370,None,Buffer Overflow vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2021-8513,EDB-35237,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-5269,EDB-69641,DoS vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2021-6387,EDB-49634,Privilege Escalation vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2021-7777,EDB-28097,XSS vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2023-3830,None,Command Injection vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2020-5970,EDB-23623,Path Traversal vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2018-2822,EDB-60294,Path Traversal vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2019-6016,EDB-47292,CSRF vulnerability in Firefox 90.0,Firefox 90.0
+CVE-2023-3222,None,Information Disclosure vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-2955,EDB-77274,Privilege Escalation vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2022-9235,EDB-80309,Command Injection vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2018-9524,EDB-46925,SSRF vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2021-5448,EDB-62813,DoS vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2019-9729,EDB-30479,DoS vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2020-2270,None,CSRF vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2023-9699,EDB-85626,Privilege Escalation vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2018-5325,EDB-47637,Buffer Overflow vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2021-8702,EDB-67075,DoS vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2018-7577,EDB-53200,CSRF vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2020-6687,None,Command Injection vulnerability in PHP 7.4.9,PHP 7.4.9
+CVE-2022-3573,None,XSS vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2022-8632,EDB-55171,SQL Injection vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2021-5071,EDB-70332,SQL Injection vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2023-8004,EDB-95035,XSS vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2023-8982,EDB-47621,Privilege Escalation vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2019-5302,EDB-39200,Buffer Overflow vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2019-4931,None,CSRF vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2020-6242,EDB-31630,SSRF vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2021-3572,EDB-46823,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-4019,EDB-28955,SSRF vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2021-5131,None,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-5261,EDB-80412,Path Traversal vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2020-6919,EDB-94814,SQL Injection vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2021-2583,None,Information Disclosure vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2019-4560,None,SSRF vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2019-6645,EDB-18479,Privilege Escalation vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2022-6303,EDB-13967,Command Injection vulnerability in IIS 10.0,IIS 10.0
+CVE-2023-7486,EDB-57603,Path Traversal vulnerability in Linux Kernel 5.4.0,Linux Kernel 5.4.0
+CVE-2023-1395,EDB-88774,XXE vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2022-3278,None,Buffer Overflow vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2021-8774,EDB-76598,XSS vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2021-2686,EDB-71023,Path Traversal vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2018-5887,EDB-14512,Command Injection vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2021-7174,EDB-57625,Auth Bypass vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2023-6357,EDB-80810,Command Injection vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2022-8837,EDB-11653,Information Disclosure vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2019-9479,EDB-31400,CSRF vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2018-3068,None,SQL Injection vulnerability in PHP 7.4.9,PHP 7.4.9
+CVE-2020-1987,EDB-63479,Auth Bypass vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2019-7849,None,SQL Injection vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2019-1975,EDB-24708,Auth Bypass vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2018-9846,EDB-74231,Auth Bypass vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2022-7815,EDB-30412,Command Injection vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2022-5287,None,Command Injection vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2019-3058,EDB-48647,CSRF vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2023-2507,EDB-49688,Information Disclosure vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2020-5168,EDB-38322,Path Traversal vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2022-4040,EDB-30018,Command Injection vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2020-8845,EDB-56062,CSRF vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2022-2381,EDB-71763,XXE vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2019-1011,None,Command Injection vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2021-9028,None,Information Disclosure vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2018-7168,EDB-72847,XXE vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2019-5532,EDB-21948,CSRF vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2018-5254,None,Buffer Overflow vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2021-1766,EDB-11830,Auth Bypass vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2019-2905,EDB-18498,SSRF vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2019-1462,EDB-97672,SSRF vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2019-4272,EDB-11307,SSRF vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2019-7297,None,Path Traversal vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2023-3019,EDB-40940,Information Disclosure vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2023-8911,EDB-25946,Command Injection vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-7265,EDB-92069,Auth Bypass vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2021-6534,None,SQL Injection vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2022-5877,EDB-72595,XXE vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2019-4801,EDB-27994,SSRF vulnerability in OpenSSL 1.0.2,OpenSSL 1.0.2
+CVE-2021-9052,EDB-72094,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-6132,EDB-82866,SQL Injection vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2018-5742,None,Privilege Escalation vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2021-9994,None,Privilege Escalation vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2018-7799,None,DoS vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2019-6666,EDB-33874,Auth Bypass vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2021-2551,EDB-76676,XXE vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2020-3830,None,SQL Injection vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-4105,EDB-75578,Privilege Escalation vulnerability in IIS 10.0,IIS 10.0
+CVE-2021-1620,None,XSS vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2019-1928,EDB-63919,Buffer Overflow vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2021-5256,EDB-32091,Auth Bypass vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2019-5087,EDB-79482,DoS vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-5170,EDB-85590,Buffer Overflow vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2021-5094,None,Privilege Escalation vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2022-7202,None,Command Injection vulnerability in WordPress 5.4.1,WordPress 5.4.1
+CVE-2018-4224,EDB-52770,CSRF vulnerability in Redis 6.2.4,Redis 6.2.4
+CVE-2021-7151,EDB-82600,SQL Injection vulnerability in Nginx 1.18.0,Nginx 1.18.0
+CVE-2023-8043,EDB-75770,SQL Injection vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2020-6242,EDB-78097,DoS vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-2679,EDB-73940,SQL Injection vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2022-7708,EDB-58160,DoS vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2021-8190,None,Auth Bypass vulnerability in Firefox 90.0,Firefox 90.0
+CVE-2018-4319,None,Privilege Escalation vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2022-9732,EDB-15007,Buffer Overflow vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2019-9030,EDB-22691,Path Traversal vulnerability in Apache 2.4.39,Apache 2.4.39
+CVE-2021-9265,EDB-16826,Information Disclosure vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2018-6447,EDB-57331,Path Traversal vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2019-7196,None,XSS vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2022-2963,EDB-66514,XXE vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2023-2839,None,Path Traversal vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2022-4469,None,XXE vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2020-6223,None,Privilege Escalation vulnerability in WordPress 5.2.4,WordPress 5.2.4
+CVE-2018-7522,None,Command Injection vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2020-2213,None,CSRF vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2018-7926,EDB-33677,XXE vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2018-1554,EDB-46073,Privilege Escalation vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2018-5257,EDB-45448,Buffer Overflow vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2020-5846,EDB-88492,XXE vulnerability in WordPress 5.4.1,WordPress 5.4.1
+CVE-2021-4637,EDB-43324,Information Disclosure vulnerability in Docker 19.03.5,Docker 19.03.5
+CVE-2018-2605,EDB-72745,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2020-3007,EDB-47788,DoS vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2020-9341,EDB-51514,Path Traversal vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2021-8538,None,Privilege Escalation vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2020-3832,EDB-77404,SQL Injection vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2023-4664,EDB-88909,XSS vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2021-2160,EDB-24830,Privilege Escalation vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2023-3523,EDB-95999,CSRF vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2018-8647,EDB-19660,XXE vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2023-6531,EDB-13998,DoS vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2018-7852,EDB-14642,SSRF vulnerability in MySQL 8.0.21,MySQL 8.0.21
+CVE-2023-5740,None,Buffer Overflow vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2022-2864,EDB-58624,DoS vulnerability in OpenSSL 3.0.0,OpenSSL 3.0.0
+CVE-2018-6118,None,SSRF vulnerability in Nginx 1.20.0,Nginx 1.20.0
+CVE-2019-6435,EDB-60476,Command Injection vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2019-9604,EDB-40829,XXE vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2023-2858,EDB-59390,DoS vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2021-4182,EDB-47619,CSRF vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2022-2397,None,CSRF vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2022-4964,EDB-95156,Buffer Overflow vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2023-3112,EDB-33242,Command Injection vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2022-6999,EDB-33493,Information Disclosure vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2018-3024,None,XSS vulnerability in WordPress 5.8.1,WordPress 5.8.1
+CVE-2019-1236,EDB-21196,Auth Bypass vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2020-8696,EDB-87788,Information Disclosure vulnerability in MySQL 5.7.21,MySQL 5.7.21
+CVE-2019-2292,EDB-82757,CSRF vulnerability in Apache 2.4.25,Apache 2.4.25
+CVE-2022-5199,EDB-50095,XSS vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2020-6033,EDB-50375,DoS vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2020-1373,None,Path Traversal vulnerability in Firefox 92.0,Firefox 92.0
+CVE-2022-9863,EDB-92794,Information Disclosure vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2019-4976,EDB-58939,Privilege Escalation vulnerability in Apache 2.4.33,Apache 2.4.33
+CVE-2018-8235,None,DoS vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2021-4873,EDB-48653,Information Disclosure vulnerability in IIS 10.0,IIS 10.0
+CVE-2023-9632,EDB-39212,DoS vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2018-2818,EDB-75454,Command Injection vulnerability in Linux Kernel 4.9.0,Linux Kernel 4.9.0
+CVE-2020-8197,EDB-31124,Information Disclosure vulnerability in Chrome 92.0,Chrome 92.0
+CVE-2018-4707,EDB-50847,Command Injection vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2020-6332,EDB-97782,CSRF vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2023-6832,None,Privilege Escalation vulnerability in PHP 7.3.11,PHP 7.3.11
+CVE-2019-8457,None,Command Injection vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2023-8491,EDB-82046,Path Traversal vulnerability in WordPress 5.4.1,WordPress 5.4.1
+CVE-2020-1409,EDB-74673,Privilege Escalation vulnerability in MySQL 8.0.15,MySQL 8.0.15
+CVE-2018-4105,EDB-23387,Information Disclosure vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2021-1359,None,XXE vulnerability in Nginx 1.14.0,Nginx 1.14.0
+CVE-2023-8920,EDB-48329,XXE vulnerability in OpenSSL 1.1.1,OpenSSL 1.1.1
+CVE-2018-9849,EDB-58643,XSS vulnerability in Apache 2.4.29,Apache 2.4.29
+CVE-2023-8681,EDB-14323,Information Disclosure vulnerability in Redis 6.0.9,Redis 6.0.9
+CVE-2021-2964,None,Command Injection vulnerability in Linux Kernel 4.19.0,Linux Kernel 4.19.0
+CVE-2018-7072,EDB-77915,Command Injection vulnerability in Docker 20.10.7,Docker 20.10.7
+CVE-2019-9792,EDB-39631,Auth Bypass vulnerability in Redis 5.0.7,Redis 5.0.7
+CVE-2018-4109,EDB-71456,XSS vulnerability in OpenSSL 1.1.0,OpenSSL 1.1.0
+CVE-2022-8503,EDB-32711,Auth Bypass vulnerability in PHP 8.0.0,PHP 8.0.0
+CVE-2022-7847,None,Buffer Overflow vulnerability in Chrome 91.0,Chrome 91.0
+CVE-2019-5541,EDB-47270,DoS vulnerability in Linux Kernel 4.14.0,Linux Kernel 4.14.0
+CVE-2019-3873,EDB-25979,SSRF vulnerability in IIS 10.0,IIS 10.0
+CVE-2018-9780,None,Buffer Overflow vulnerability in IIS 10.0,IIS 10.0
+CVE-2023-6590,None,XSS vulnerability in IIS 10.0,IIS 10.0
+CVE-2022-6780,EDB-18688,DoS vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2018-1676,None,XSS vulnerability in Chrome 90.0,Chrome 90.0
+CVE-2019-6910,None,SQL Injection vulnerability in Nginx 1.16.0,Nginx 1.16.0
+CVE-2019-7712,EDB-34342,CSRF vulnerability in WordPress 5.6.2,WordPress 5.6.2
+CVE-2023-6698,EDB-60852,Buffer Overflow vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2018-6305,EDB-72081,Auth Bypass vulnerability in Firefox 89.0,Firefox 89.0
+CVE-2023-3896,EDB-98010,Auth Bypass vulnerability in MySQL 8.0.26,MySQL 8.0.26
+CVE-2020-2062,None,Privilege Escalation vulnerability in Docker 20.10.0,Docker 20.10.0
+CVE-2023-8608,EDB-76732,Buffer Overflow vulnerability in Apache 2.4.17,Apache 2.4.17
+CVE-2021-3675,None,CSRF vulnerability in PHP 7.2.24,PHP 7.2.24
+CVE-2022-6416,EDB-25150,Path Traversal vulnerability in Chrome 93.0,Chrome 93.0
+CVE-2020-4709,EDB-32130,Privilege Escalation vulnerability in Firefox 91.0,Firefox 91.0
+CVE-2019-9266,None,Information Disclosure vulnerability in IIS 10.0,IIS 10.0
